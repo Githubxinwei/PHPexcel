@@ -276,34 +276,6 @@ class PHPExcelCore extends PHPExcel_IOFactory{
     }
 }
 $Head = array(
-    array('value'=>'名字','col'=>2,'row'=>2,'width'=>20,'type'=>'list','allowarray'=>'PHP开发工程师,PHP开发'),
-    array('value'=>'第一天','col'=>2,'row'=>1,'width'=>20,'Content'=>'2014-12-29号',
-        'children'=>
-            array(
-                array('value'=>'上午','col'=>1,'width'=>20,'type'=>'range','allowarray'=>'10,100'),
-                array('value'=>'下午','width'=>20),
-            ),
-    ),
-    array('value'=>'第二天','col'=>2,'row'=>1,'width'=>20,
-        'children'=>
-            array(
-                array('value'=>'上午','width'=>20),
-                array('value'=>'下午','width'=>20),
-            ),
-    ),
-);
-$data = array(
-    array('PHP开发工程师','12','吃饭1','睡觉1','起床刷牙2','吃饭睡觉2'),
-    array('PHP开发工程师','25','吃饭1','睡觉1','起床刷牙2','吃饭睡觉2'),
-    array('PHP开发工程师','50','吃饭1','睡觉1','起床刷牙2','吃饭睡觉2'),
-    array('PHP开发工程师','99','吃饭1','睡觉1','起床刷牙2','吃饭睡觉2'),
-    array('PHP开发工程师','10','吃饭1','睡觉1','起床刷牙2','吃饭睡觉2'),
-);
-$Node = PHPExcelCore::RecursionCreateExecl($Head,$data);
-
-
-
-$Head = array(
     array('value'=>'姓名','col'=>2,'row'=>2,'width'=>20,'type'=>'list','allowarray'=>'PHP开发工程师,PHP开发'),
     array('value'=>'第一天','col'=>2,'row'=>1,'width'=>20,'Content'=>'2014-12-29号',
         'children'=>
@@ -311,7 +283,6 @@ $Head = array(
                 array('value'=>'上午','col'=>1,'width'=>20,'type'=>'range','allowarray'=>'10,100'),
                 array('value'=>'下午','width'=>20),
             ),
-
     ),
     array('value'=>'第二天','col'=>2,'row'=>1,'width'=>20,
         'children'=>
@@ -321,8 +292,6 @@ $Head = array(
             ),
     ),
 );
-
-
 $data = array(
     array('PHP开发工程师','12','吃饭1','睡觉1','起床刷牙2','吃饭睡觉2'),
     array('PHP开发工程师','25','吃饭1','睡觉1','起床刷牙2','吃饭睡觉2'),
@@ -330,5 +299,4 @@ $data = array(
     array('PHP开发工程师','99','吃饭1','睡觉1','起床刷牙2','吃饭睡觉2'),
     array('PHP开发工程师','10','吃饭1','睡觉1','起床刷牙2','吃饭睡觉2'),
 );
-
 $Node = PHPExcelCore::RecursionCreateExecl($Head,$data);
