@@ -276,7 +276,7 @@ class PHPExcelCore extends PHPExcel_IOFactory{
     }
 }
 $Head = array(
-    array('value'=>'姓名','col'=>2,'row'=>2,'width'=>20,'type'=>'list','allowarray'=>'PHP开发工程师,PHP开发'),
+    array('value'=>'名字','col'=>2,'row'=>2,'width'=>20,'type'=>'list','allowarray'=>'PHP开发工程师,PHP开发'),
     array('value'=>'第一天','col'=>2,'row'=>1,'width'=>20,'Content'=>'2014-12-29号',
         'children'=>
             array(
